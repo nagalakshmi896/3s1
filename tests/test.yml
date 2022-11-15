@@ -1,5 +1,7 @@
----
-- hosts: localhost
-  remote_user: root
+- hosts: all
+  gather_facts: False
+  vars_files:
+    - dbbackup/defaults/main.yml
   roles:
-    - db_backup
+    - role: dbbackup
+```
