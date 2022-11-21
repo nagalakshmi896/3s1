@@ -1,4 +1,8 @@
+
 1.dbbackup
+after gitclone run below command
+change directory name 3s1 to dbbackup
+mv 3s1 dbbackup
 
 2.dbbackup.yml
 
