@@ -44,6 +44,6 @@ echo "Syncing DB Backup file from $db_backup_dir_local/ to s3://$db_backup_bucke
 
 send_notification "DB backup files synced  at: s3://$db_backup_bucket_name/$backup_path_remote/$hostname/$backup_db_name/"
 
-echo "Deleting files from $db_backup_dir_local/"
-rm -rf $db_backup_dir_local/* || handle_error 'DB Backup local cleanup failed.'
+#echo "Deleting files from $db_backup_dir_local/"
+#rm -rf $db_backup_dir_local/* || handle_error 'DB Backup local cleanup failed.'
 
