@@ -1,3 +1,10 @@
+cd templates
+vi db_backup.sh.j2
+comment below to lines complusory
+#echo "Deleting files from $db_backup_dir_local/"
+#rm -rf $db_backup_dir_local/* || handle_error 'DB Backup local cleanup failed.'
+
+
 
 1.dbbackup
 after gitclone run below command
